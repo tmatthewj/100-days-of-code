@@ -11,3 +11,11 @@
 
 *Today’s Progress*: Understanding webpack, webpack-simple projecting packagings. Tried creating a vue project with webpack-simple and getting it to work. Couldn’t make out a few parts. Will spend more time tomorrow to understand this better. Ref I used - https://codeburst.io/building-your-very-first-component-with-vuejs-21b4a2f6a15a.
 
+*Day 3*: August 6, 2018
+
+*Today’s Progress*: I realised I need to understand Vue at better detail before starting to work on the project. Started going through tutorials put up here - https://www.vuemastery.com/courses/intro-to-vue-js/vue-instance/ with hands on example.
+
+*Day 4*: August 7, 2018
+
+*Today’s Progress*:  Continuing with Vue Mastery tutorials. Completed 2. I will prefer to complete this in the days to come to get started. These tutorials have small hands on tests. Doing them as I go.  https://www.vuemastery.com/courses/intro-to-vue-js/vue-instance/. 
+
