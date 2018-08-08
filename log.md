@@ -19,3 +19,7 @@
 
 *Today’s Progress*:  Continuing with Vue Mastery tutorials. Completed 2. I will prefer to complete this in the days to come to get started. These tutorials have small hands on tests. Doing them as I go.  https://www.vuemastery.com/courses/intro-to-vue-js/vue-instance/. 
 
+*Day 5*: August 8, 2018
+
+*Today’s Progress*:  Continuing with Vue Mastery tutorials. Completed 3,4. These tutorials have small hands on tests. Doing them as I go.  https://www.vuemastery.com/courses/intro-to-vue-js/vue-instance/.
+
