@@ -59,6 +59,10 @@ body {
   .disabledButton {
     background-color: #d8d8d8;
   }
+
+  .alertText {
+    text-decoration: line-through;
+  }
   
   .review-form {
     width: 400px;
