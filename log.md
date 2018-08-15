@@ -31,3 +31,20 @@
 
 *Today’s Progress*:  Continued with Vue Mastery tutorials. Completed 7. These tutorials have small hands on tests. Doing them as I go. Hope to complete remaining 4 over the weekend.
 
+*Day 8*: August 11, 2018
+
+*Today’s Progress*:  Continued with Vue Mastery tutorials on components and communicating between components via events. Didn’t try the hands on challenges - will be taking them up tomorrow for these tutorials.
+
+*Day 9*: August 12, 2018
+
+*Today’s Progress*:  Completed Vue Mastery tutorials - forms and tabs. Did some hands on exercise on events and components. Next step - understand how webpack helps you create boilerplate expressJS + vueJs app - understand that to good detail.
+
+*Day 10*: August 13, 2018
+
+*Today’s Progress*:  Implemented the challenges related to components and event handling on Vue based on the tutorials. Evaluating if I should go ahead and learn about using a nodejs - vuejs app or spend some more time understanding the advanced concepts of Vue based on the next level of Vue mastery tutorials.
+
+*Day 11: August 14, 2018*
+
+*Today’s Progress*:  Read about how to setup a project on Vue and the different components involved. Also learned a bit about node packaging - how it works, why package-lock, package.json exist etc. Also ended the session by creating a Vue project using vue-cli. Next steps - learn how Vue-ex and Vue-router works.
+
+
