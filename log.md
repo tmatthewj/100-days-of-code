@@ -47,4 +47,24 @@
 
 *Today’s Progress*:  Read about how to setup a project on Vue and the different components involved. Also learned a bit about node packaging - how it works, why package-lock, package.json exist etc. Also ended the session by creating a Vue project using vue-cli. Next steps - learn how Vue-ex and Vue-router works.
 
+*Day 12: August 16, 2018*
 
+*Today’s Progress*:  The previous day I got hands on with Basim’s typewriting demo. One thing I understood is that my motivation is also to learn a bit more about how an app works and how Vue works instead of just focusing on the front-end alone or Vue specifics. This is because my overall understanding is still shallow and that needs to improve. I learned a bit about reactive programming and how it has it’s roots built on the oop concept of observer pattern. Tutorial I followed - Build a reactivity system by Vue Mastery.
+
+
+*Day 13: August 18, 2018*
+
+*Today’s Progress*: I continued with the 2nd tutorial on the Advanced Component section where Evan You talks about how they are rewriting the reactivity system with the library called Proxies in Vue 2.x. This tutorial, I thought would give me more perspective on reactive programming. But I found it difficult to follow and look a while to complete.(link - https://www.vuemastery.com/courses/advanced-components/evan-you-on-proxies) Lesson - I will now start looking at getting started with the app instead of pure theory session.
+
+
+*Day 14: August 19, 2018*
+
+*Today’s Progress*: Started following a tutorial for to-do app that I could understand and relate to much better because of the learnings. https://scotch.io/tutorials/build-a-to-do-app-with-vue-js-2 . Will be continuing with this to complete a basic prototype of to-do app.
+
+*Day 15: August 21, 2018*
+
+*Today’s Progress*:  Continued working on the todo-app tutorial by scotch.io. I got stuck pretty early in the steps, something to do with how I’m referencing a component in another file. Even though I didn’t get through to solve the problem (and make progress), I thought it’s better that I understand these issues better instead of trying to learn Vue in isolation. Today, Basim recommended that I take a look at Nuxt to build lighter vue apps. I might plan to do it after finishing this tutorial.
+
+*Day 16: August 22, 2018*
+
+*Today’s Progress*: I continued to try and fix the issue with component referencing. Tried a lot of trial and error but with no help. Basically, got to know that the tutorial has a lot of comments that evaluate it as one with incomplete steps etc. But I think this would be a perfect for me to learn each component step by step and make progress (think of a tutorial with a few errors planted and you are expected to learn it. Could be exciting right?) . So will continue to uncover it step by step and get to completion. Will take Basim / Srijith’s help with a few things, when I meet them in office.
