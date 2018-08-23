@@ -68,3 +68,9 @@
 *Day 16: August 22, 2018*
 
 *Today’s Progress*: I continued to try and fix the issue with component referencing. Tried a lot of trial and error but with no help. Basically, got to know that the tutorial has a lot of comments that evaluate it as one with incomplete steps etc. But I think this would be a perfect for me to learn each component step by step and make progress (think of a tutorial with a few errors planted and you are expected to learn it. Could be exciting right?) . So will continue to uncover it step by step and get to completion. Will take Basim / Srijith’s help with a few things, when I meet them in office.
+
+*Day 17: August 23, 2018*
+
+*Today’s Progress*: I fixed the issue that was not building my todo code successfully. Apparently the way I setup the project was different from the way the author set it up. The tutorial was setup to not use Vue Router where as I had marked yes for it. This resulted in different ways of referencing sub-components in a given base component. I’m continuing with the tutorial. Finding it really helpful because of a few errors in it (good chance to google and learn what the issue is). Hope to wrap this up in next 2 sessions.
+
+
