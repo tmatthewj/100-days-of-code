@@ -73,4 +73,16 @@
 
 *Today’s Progress*: I fixed the issue that was not building my todo code successfully. Apparently the way I setup the project was different from the way the author set it up. The tutorial was setup to not use Vue Router where as I had marked yes for it. This resulted in different ways of referencing sub-components in a given base component. I’m continuing with the tutorial. Finding it really helpful because of a few errors in it (good chance to google and learn what the issue is). Hope to wrap this up in next 2 sessions.
 
+*Day 18: August 24, 2018*
+
+*Today’s Progress*: Continued with the tutorial. Implemented the edit experience on todo item UI.
+
+*Day 19: August 26, 2018*
+
+*Today’s Progress*: Continued with the tutorial. Implemented the add new todo item UI. Got stuck while doing this as I couldn’t get the event dispatch logic to work fine. After some research, figured out that event listener methods corresponding to an event dispatcher within component A can only be present in a parent component that has A as a child. It basically functions in the opposite direction of how Props are used..
+
+*Day 20: August 27, 2018*
+
+*Today’s Progress*: Completed the tutorial with the task complete UI and logic. Will now continue with Nuxt tutorial from tomorrow.
+
 
