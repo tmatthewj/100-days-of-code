@@ -85,4 +85,29 @@
 
 *Today’s Progress*: Completed the tutorial with the task complete UI and logic. Will now continue with Nuxt tutorial from tomorrow.
 
+*Day 21: August 29, 2018*
+
+*Today’s Progress*: Got hold of tutorials from Basim and started watching them. Completed half the chapters of Getting Started 01. Didn’t do any hands-on coding with the tutorial.
+
+*Day 22: August 30, 2018*
+
+*Today’s Progress*: Completed all the tutorials of Getting Started 01. Didn’t do any hands-on coding. I was pretty tired this day. Crashed with the laptop in my hand if I remember correctly.*
+
+*Day 23: September 1, 2018*
+
+*Today’s Progress*: Went through the steps of creating the app as we did in Basim’s session. Made some changes on the app and also learned to use emmet for autocompleting constructs.
+
+*Day 24: September 2, 2018*
+
+*Today’s Progress*: Read more about client side routing and how it helps to build single page apps. Got a little drifted by reading about why some of the big apps like FB uses client side routing. Started watching page routing views tutorials (chapter 2) and completed 2 of them.
+
+Last week has been a super hectic week for me. A couple of days, I just tried to do 100days to tick it off the day but couldn’t be in a state of enough energy to spend that 1 hour properly. Will try to manage these things better going forward.
+
+*Day 26: September 3, 2018*
+
+*Today’s Progress*: Continued with page routing views tutorials (chapter 2) 3 and 4. Mostly catching up with what Basim taught in the tech-session. Extra - learned how to navigate to pages by taking in user parameter (eg param Id) in a page and then using $router.push method to go to another page using client side routing.
+
+*Day 27: September 4, 2018*
+
+*Today’s Progress*: Continued with page routing views tutorials (chapter 2) 5 and 6. Mostly catching up with what Basim taught in the tech-session. Extra - learned about nesting routes - a neat way to have a base component rendering in all pages within a base route. Eg. Having a search bar for all user/ pages to go to another user page.
 
