@@ -103,11 +103,20 @@
 
 Last week has been a super hectic week for me. A couple of days, I just tried to do 100days to tick it off the day but couldn’t be in a state of enough energy to spend that 1 hour properly. Will try to manage these things better going forward.
 
-*Day 26: September 3, 2018*
+*Day 25: September 3, 2018*
 
 *Today’s Progress*: Continued with page routing views tutorials (chapter 2) 3 and 4. Mostly catching up with what Basim taught in the tech-session. Extra - learned how to navigate to pages by taking in user parameter (eg param Id) in a page and then using $router.push method to go to another page using client side routing.
 
-*Day 27: September 4, 2018*
+*Day 26: September 4, 2018*
 
 *Today’s Progress*: Continued with page routing views tutorials (chapter 2) 5 and 6. Mostly catching up with what Basim taught in the tech-session. Extra - learned about nesting routes - a neat way to have a base component rendering in all pages within a base route. Eg. Having a search bar for all user/ pages to go to another user page.
+
+*Day 27: September 5, 2018*
+
+*Today’s Progress*: Wrapped up with all the tutorials related to pages, routing and views on Nuxt (most of what Basim covered). Will move on to the blog project now. Planning to complete it before anything else while coding along with the tutorials.
+
+*Day 28: September 6, 2018*
+
+*Today’s Progress*: Started off with the blog project. Covered tutorial 1 and 2. Created a few basic pages like admin / posts/xxx, about with some styling for the pages. Also learned how to use nuxt-config to load link items across the project (example - font for all pages).
+
 
