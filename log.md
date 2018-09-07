@@ -119,4 +119,7 @@ Last week has been a super hectic week for me. A couple of days, I just tried to
 
 *Today’s Progress*: Started off with the blog project. Covered tutorial 1 and 2. Created a few basic pages like admin / posts/xxx, about with some styling for the pages. Also learned how to use nuxt-config to load link items across the project (example - font for all pages).
 
+*Day 29: September 7, 2018*
+
+*Today’s Progress*: Continued with blog project. Covered the landing page creation, splitting of posts into different components and adding static assets like an background image for the blog landing page.
 
