@@ -123,3 +123,9 @@ Last week has been a super hectic week for me. A couple of days, I just tried to
 
 *Today’s Progress*: Continued with blog project. Covered the landing page creation, splitting of posts into different components and adding static assets like an background image for the blog landing page.
 
+*Day 30: September 8, 2018*
+
+*Today’s Progress*: Continued with blog project. Worked on the post page and settling up the admin page with basic create new post flow. Some of the components where provided in the tutorial. But spent some time looking at their make-up and setup. Overall the project is getting pretty exciting. Looking forward to make progress every day.
+
+
+
