@@ -3,32 +3,16 @@
     <section class="intro">
       <h1>Get the latest tech news!</h1>
     </section>
-    <section class="featured-posts">
-      <post-preview
-        id="1"
-        thumbnail="https://www.diplateevo.com/wp-content/uploads/2012/02/tech-tshirt.png"
-        title="My first post"
-        previewText="This is my first post"/>
-      <post-preview
-        id="2"
-        thumbnail="https://www.diplateevo.com/wp-content/uploads/2012/02/tech-tshirt.png"
-        title="My second post"
-        previewText="This is my first post"/>
-      <post-preview
-        id="3"
-        thumbnail="https://www.diplateevo.com/wp-content/uploads/2012/02/tech-tshirt.png"
-        title="My third post"
-        previewText="This is my first post"/>
-    </section>
+    <post-list />
   </div>
 </template>
 
 <script>
-import PostPreview from '~/components/Posts/PostPreview'
+import PostList from '~/components/Posts/PostList'
 
 export default {
   components: {
-    PostPreview 
+    PostList
   }
 }
 
@@ -64,14 +48,5 @@ export default {
   .intro h1 {
     font-size: 2rem;
   }
-}
-
-.featured-posts {
-  display: flex;
-  padding: 20px;
-  box-sizing: border-box;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
 }
 </style>
