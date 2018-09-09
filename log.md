@@ -127,5 +127,7 @@ Last week has been a super hectic week for me. A couple of days, I just tried to
 
 *Today’s Progress*: Continued with blog project. Worked on the post page and settling up the admin page with basic create new post flow. Some of the components where provided in the tutorial. But spent some time looking at their make-up and setup. Overall the project is getting pretty exciting. Looking forward to make progress every day.
 
+*Day 31: September 9, 2018*
 
+*Today's Progress*: Completed the section related to page routing for the blog project. Specifically wrapped up showing posts in editable format when visited via the admin route. Looking forward to the next section of tutorials that are about handling data.
 
