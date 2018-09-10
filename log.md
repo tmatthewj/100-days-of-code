@@ -131,3 +131,12 @@ Last week has been a super hectic week for me. A couple of days, I just tried to
 
 *Today's Progress*: Completed the section related to page routing for the blog project. Specifically wrapped up showing posts in editable format when visited via the admin route. Looking forward to the next section of tutorials that are about handling data.
 
+*Day 32: September 10, 2018*
+
+*Today's Progress*: Started with handling data for the blog. First step was to make sure the post list information is loaded on the main page, as if it comes from a server instead of pulling it from a data object in the client side. Learnt what DataAsync and Created means in the flow of rendering a page on Nuxt.
+
+*Day 33: September 11, 2018*
+
+*Today's Progress*: Continued with data-handling part of the blog setup. Got to look more closely at Context object in AsyncData, handling errors with a callback and using promises instead of callback in AsyncData. Not all of it is very clear to me right now. Will read up a bit more about how promises vs callbacks differ.
+
+

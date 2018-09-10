@@ -1,23 +1,13 @@
 <template>
     <section class="post-list">
     <post-preview
-        id="1"
+        v-for="post in posts"
+        :key="post.id"
+        :id="post.id"
         :is-admin="isAdmin"
-        thumbnail="https://www.diplateevo.com/wp-content/uploads/2012/02/tech-tshirt.png"
-        title="My first post"
-        previewText="This is my first post"/>
-    <post-preview
-        id="2"
-        :is-admin="isAdmin"
-        thumbnail="https://www.diplateevo.com/wp-content/uploads/2012/02/tech-tshirt.png"
-        title="My second post"
-        previewText="This is my first post"/>
-    <post-preview
-        id="3"
-        :is-admin="isAdmin"
-        thumbnail="https://www.diplateevo.com/wp-content/uploads/2012/02/tech-tshirt.png"
-        title="My third post"
-        previewText="This is my first post"/>
+        :thumbnail= "post.thumbnail"
+        :title="post.title"
+        :previewText="post.previewText"/>
     </section>
 </template>
 
@@ -32,6 +22,10 @@ export default {
         isAdmin: {
             type: Boolean,
             default: false
+        },
+        posts: {
+            type: Array,
+            required: true
         }
     }
 }

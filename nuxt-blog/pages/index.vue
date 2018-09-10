@@ -3,7 +3,7 @@
     <section class="intro">
       <h1>Get the latest tech news!</h1>
     </section>
-    <post-list />
+    <post-list :posts="loadedPosts"/>
   </div>
 </template>
 
@@ -13,7 +13,45 @@ import PostList from '~/components/Posts/PostList'
 export default {
   components: {
     PostList
-  }
+  },
+  // data() {
+  //   // return {
+  //   //   loadedPosts: []
+  //   // };
+  // },
+  asyncData(context, callback) {
+    console.log(context)
+    setTimeout(() => {
+      callback(null, {loadedPosts: [
+        { id: '1',
+         title: 'First Post', 
+         previewText: 'This is my first post', 
+         thumbnail: "https://www.diplateevo.com/wp-content/uploads/2012/02/tech-tshirt.png",
+        },
+        { id: '2',
+         title: 'Second Post', 
+         previewText: 'This is my second post', 
+         thumbnail: "https://www.diplateevo.com/wp-content/uploads/2012/02/tech-tshirt.png",
+        },
+      ]});
+    }, 1500);
+  },
+  // created() {
+  //   setTimeout(() => {
+  //     this.loadedPosts = [
+  //       { id: '1',
+  //        title: 'First Post', 
+  //        previewText: 'This is my first post', 
+  //        thumbnail: "https://www.diplateevo.com/wp-content/uploads/2012/02/tech-tshirt.png",
+  //       },
+  //       { id: '2',
+  //        title: 'Second Post', 
+  //        previewText: 'This is my second post', 
+  //        thumbnail: "https://www.diplateevo.com/wp-content/uploads/2012/02/tech-tshirt.png",
+  //       },
+  //     ]
+  //   } , 3000)
+  // }
 }
 
 </script>

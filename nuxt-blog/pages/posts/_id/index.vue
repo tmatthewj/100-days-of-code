@@ -1,18 +1,39 @@
 <template>
     <div class="single-post-page">
         <section class="post">
-            <h1 class="post-title">Title of the Post</h1>
+            <h1 class="post-title">{{ loadedPost.title }}</h1>
             <div class="post-details">
-                <div class="post-detail">Last updated on XXX</div>
-                <div class="post-detail">Written by Name</div>
+                <div class="post-detail">Last updated on {{ loadedPost.updatedDate }}</div>
+                <div class="post-detail">Written by {{ loadedPost.author}}</div>
             </div>
-            <p class="post-content">Content of the post</p>
+            <p class="post-content">{{ loadedPost.content}}</p>
         </section>
         <section class="post-feedback">
             <p>Let me know what you think about this post. Send a mail to <a href="mailto:feedback@myblog.com">feedback@myblog.com</a></p>             
         </section>
     </div>
 </template> 
+
+<script>
+export default {
+  asyncData(context, callback) {
+    setTimeout(()=> {
+      callback(null, {
+        loadedPost: {
+          id: '1',
+          title: 'First Post (ID: ' + context.route.params.id + ')', 
+          previewText: 'This is my first post', 
+          author: 'Matthew john',
+          updatedDate: new Date(),
+          content: 'Hello how are you? Some dummy text.',
+          thumbnail: "https://www.diplateevo.com/wp-content/uploads/2012/02/tech-tshirt.png"
+        }
+      })
+    }, 1000)
+  }
+}
+</script>
+
 
 <style scoped>
 .single-post-page {
