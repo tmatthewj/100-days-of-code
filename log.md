@@ -139,4 +139,6 @@ Last week has been a super hectic week for me. A couple of days, I just tried to
 
 *Today's Progress*: Continued with data-handling part of the blog setup. Got to look more closely at Context object in AsyncData, handling errors with a callback and using promises instead of callback in AsyncData. Not all of it is very clear to me right now. Will read up a bit more about how promises vs callbacks differ.
 
+*Day 34: September 12, 2018*
 
+*Today's Progress*: Got started with using Vuex to maintain the state of the blog. Used Vuex store in the `/posts/` page of the blog. While doing this, I kept getting 'unknown action type' error when I was doing a store.commit. After quite a lot of searching, I realised the importance of <space> after the name of a given mutation or action in the store file. Got to read up more about these conventions.
