@@ -142,3 +142,21 @@ Last week has been a super hectic week for me. A couple of days, I just tried to
 *Day 34: September 12, 2018*
 
 *Today's Progress*: Got started with using Vuex to maintain the state of the blog. Used Vuex store in the `/posts/` page of the blog. While doing this, I kept getting 'unknown action type' error when I was doing a store.commit. After quite a lot of searching, I realised the importance of <space> after the name of a given mutation or action in the store file. Got to read up more about these conventions.
+
+*Day 35: September 13, 2018*
+
+*Today's Progress*: Implemented NuxtServerInit for loading the posts data (instead of using AsyncData that's used to fetch on a per page basis). NSI is used to initialise your app with critical data at the start of the app session. At a high level, learnt that you can decide if you want to load data on per page basis or store it in Vuex and get it as and when required. Next will get started on using a real back-end for data.
+
+*Day 36: September 14, 2018*
+
+*Today's Progress*: Learned a hacky way to run server-side code in NuxtServerInit /  AsyncData etc (check if it's on client side) but this is not recommended (need to read more) for at least pulling data. More about it later in the tutorial I think. 
+
+Setup Firebase account and project for nuxt-blog. In the admin view, linked submit post method to push the data to firebase using Axios library to make post request.
+
+*Day 37: September 15, 2018*
+
+*Today's Progress*:  Continued linking the different pieces of the blog with firebase back-end. User flows updated to use firebase back-end: updating / editing a given blog post in admin view, showing existing blog posts in all views (including admin view), creating a new post. Next - need to ensure the Vue store is in sync with the data on the server (which is not the case now).
+
+*Day 38: September 16, 2018*
+
+*Today's Progress*: Moved all the post data updation (like edit, add posts) logic inside store where the back-end is made in sync with the store data. Post data getter requests (for a given post page) are still spread out outside the store. This can be optmised to pick the data from store getters (which wraps around back-end calls). With this wrapped up the module of linking the blog to a real back-end. Few things to understand in detail: what is the difference between $route and $router.

@@ -15,22 +15,19 @@
 </template> 
 
 <script>
+import axios from 'axios'
+
 export default {
-  asyncData(context, callback) {
-    setTimeout(()=> {
-      callback(null, {
-        loadedPost: {
-          id: '1',
-          title: 'First Post (ID: ' + context.route.params.id + ')', 
-          previewText: 'This is my first post', 
-          author: 'Matthew john',
-          updatedDate: new Date(),
-          content: 'Hello how are you? Some dummy text.',
-          thumbnail: "https://www.diplateevo.com/wp-content/uploads/2012/02/tech-tshirt.png"
+  
+  asyncData(context) {
+    return axios.get('https://nuxt-blog-tmatthewj.firebaseio.com/' + context.params.id + '.json')
+      .then(res => {
+        return {
+          loadedPosts: res.data
         }
       })
-    }, 1000)
-  }
+      .catch(e => context.error(e))
+  },
 }
 </script>
 
