@@ -15,14 +15,19 @@ export default {
     components: {
         AdminPostForm
     },
-    asyncData(context) {
-        return axios.get('https://nuxt-blog-tmatthewj.firebaseio.com/' + context.params.id + '.json')
-            .then(res => {
-                return {
-                    loadedPost: { ...res.data, id: context.params.postId }
-                }
-            })
-            .catch(e => context.error(e))
+    // asyncData(context) {
+    //     return axios.get('https://nuxt-blog-tmatthewj.firebaseio.com/posts/' + context.params.postId + '.json')
+    //         .then(res => {
+    //             return {
+    //                 loadedPost: { ...res.data, id: context.params.postId }
+    //             }
+    //         })
+    //         .catch(e => context.error(e))
+    // },
+    computed: {
+        loadedPost() {
+            return this.$store.getters.loadedPostById(this.$route.params.postId);
+        }
     },
     methods: {
         onSubmitted(editedPost) {

@@ -160,3 +160,15 @@ Setup Firebase account and project for nuxt-blog. In the admin view, linked subm
 *Day 38: September 16, 2018*
 
 *Today's Progress*: Moved all the post data updation (like edit, add posts) logic inside store where the back-end is made in sync with the store data. Post data getter requests (for a given post page) are still spread out outside the store. This can be optmised to pick the data from store getters (which wraps around back-end calls). With this wrapped up the module of linking the blog to a real back-end. Few things to understand in detail: what is the difference between $route and $router.
+
+*Day 39: September 17, 2018*
+
+*Today's Progress*: Did a bit of refactoring around ensuring all axios calls happen from the store and not from any page components (not sure if it's relevant though :P). While doing this, also learned how to use Store getters with params passed (more details here - [https://vuex.vuejs.org/guide/getters.html](https://vuex.vuejs.org/guide/getters.html) - method style access). After that got started with nuxt-config tutorials on how to set env variables, special route configs and even page to page transition animations. 
+
+*Day 40: September 18, 2018*
+
+*Today's Progress*: Continued with other configs that can be added on nuxt-config. Learned how to use plugins and modules in a given nuxt app.
+
+
+
+

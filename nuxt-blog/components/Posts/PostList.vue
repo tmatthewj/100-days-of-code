@@ -22,10 +22,11 @@ export default {
         isAdmin: {
             type: Boolean,
             default: false
-        },
-        posts: {
-            type: Array,
-            required: true
+        }
+    },
+    computed: {
+        posts() {
+            return this.$store.getters.loadedPosts
         }
     }
 }
