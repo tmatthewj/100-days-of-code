@@ -169,6 +169,14 @@ Setup Firebase account and project for nuxt-blog. In the admin view, linked subm
 
 *Today's Progress*: Continued with other configs that can be added on nuxt-config. Learned how to use plugins and modules in a given nuxt app.
 
+*Day 41: September 19, 2018*
+
+*Today's Progress*: Introduction to middleware - functions that can be performed before the page render at pages / layout / route levels. Got started on integrating Firebase email / password signin method in the app. As of now, the sign-in request with the APIkey is returning an error. Need to figure out why it's not working.
+[Update] Used Postman to send the request separately and look out for the issue. It was basically a weak password issue raised by Google. Resolved it.
+
+*Day 42: September 20, 2018*
+
+*Today's Progress*: Added auth token to the store. Added basic flow to redirect user (from admin pages) to login / sign-up page if there's no active auth token in the store. Did this using a middleware. The current setup also invalidates the token once it reaches its expiry. Also changed the write rules in Firebase DB to look out for auth token in the API url (this impacts 2 user functuns - edit post, add new post)
 
 
 

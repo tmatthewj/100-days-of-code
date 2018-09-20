@@ -4,7 +4,8 @@ import axios from 'axios'
 const createStore = () => {
     return new Vuex.Store({
         state: {
-            loadedPosts: []
+            loadedPosts: [],
+            token: null
         },
         mutations: {
             setPosts (state, posts) {
@@ -18,6 +19,12 @@ const createStore = () => {
                     post => post.id === editedPost.id
                 );
                 state.loadedPosts[postIndex] = editedPost;
+            },
+            setToken(state, token) {
+                state.token = token
+            },
+            clearToken(state) {
+                state.token = null
             }
         },
         actions: {
@@ -38,7 +45,8 @@ const createStore = () => {
                     updatedDate: new Date()
                 }
                 return axios
-                .post(process.env.baseUrl + '/posts.json', createdPost)
+                .post(process.env.baseUrl + '/posts.json?auth=' + 
+                    vuexContext.state.token, createdPost)
                 .then(res => {
                     vuexContext.commit('addPost', {
                         ...createdPost, id: res.data.name
@@ -50,7 +58,8 @@ const createStore = () => {
                 return axios
                 .put(process.env.baseUrl +'/posts/' + 
                     editedPost.id + 
-                    '.json', editedPost)
+                    '.json?auth=' + 
+                    vuexContext.state.token, editedPost)
                 .then(res => {
                     vuexContext.commit('editPost', editedPost)
                 })
@@ -58,6 +67,30 @@ const createStore = () => {
             },
             setPosts (vuexContext, posts) {
                 vuexContext.commit('setPosts', posts)
+            },
+            authenticateUser (vuexContext, authData) {
+                let authUrl = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key='
+                + process.env.fbApiKey
+                if(!authData.isLogin) {
+                    authUrl = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key='
+                    + process.env.fbApiKey
+                }        
+                return axios.post(authUrl, {
+                  email: authData.email,
+                  password: authData.password,
+                  returnSecureToken: true
+                })
+                .then(res => {
+                    console.log(res)
+                    vuexContext.commit('setToken', res.data.idToken)
+                    vuexContext.dispatch('setLogoutTimer', res.data.expiresIn * 1000)
+                })
+                .catch(e => console.log(e))              
+            },
+            setLogoutTimer (vuexContext, duration) {
+                setTimeout(() => {
+                    vuexContext.commit('clearToken')
+                }, duration)
             }
         },
         getters: {
@@ -66,6 +99,9 @@ const createStore = () => {
             },
             loadedPostById: (state) => (postId) => {
                 return state.loadedPosts.find(loadedPost => loadedPost.id === postId)
+            },
+            isAuthenticated (state) {
+                return state.token != null
             }   
         }
     })
