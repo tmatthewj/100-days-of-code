@@ -178,5 +178,9 @@ Setup Firebase account and project for nuxt-blog. In the admin view, linked subm
 
 *Today's Progress*: Added auth token to the store. Added basic flow to redirect user (from admin pages) to login / sign-up page if there's no active auth token in the store. Did this using a middleware. The current setup also invalidates the token once it reaches its expiry. Also changed the write rules in Firebase DB to look out for auth token in the API url (this impacts 2 user functuns - edit post, add new post)
 
+*Day 43: September 21, 2018*
+
+*Today's Progress*: Added the token information in localstorage. However, that doesn't help in the first load where Nuxt loads the page from server-side. So, added token information in the cookie (cookie alone should be enough actually from what I understood). Also added logout capability in the blog. Next, will get started on integrating some server side code in the app.
+
 
 
