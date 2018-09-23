@@ -59,9 +59,9 @@ module.exports = {
     }
   },
   env: {
-    baseUrl: 'https://nuxt-blog-tmatthewj.firebaseio.com',
-    fbApiKey: 'AIzaSyBAdaH9r9CoL2WMiKAPBLXtidhwZpPQgpY',
-    serverUrl: 'http://localhost:3000'
+    baseUrl: 'sample',
+    fbApiKey: 'sample',
+    serverUrl: 'sample'
   },
 
   transition: {
