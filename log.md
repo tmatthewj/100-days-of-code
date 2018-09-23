@@ -182,5 +182,13 @@ Setup Firebase account and project for nuxt-blog. In the admin view, linked subm
 
 *Today's Progress*: Added the token information in localstorage. However, that doesn't help in the first load where Nuxt loads the page from server-side. So, added token information in the cookie (cookie alone should be enough actually from what I understood). Also added logout capability in the blog. Next, will get started on integrating some server side code in the app.
 
+*Day 44: September 22, 2018*
+
+*Today's Progress*: Learnt how to have some code run on the server side using serverMiddleware option in nuxt.config. Was trying to emulate the calls made in the server side using Postman and got stuck a specific point trying to emulate 100% but failing to do so.  It was related to passing data as a JSON object under raw option in Body. Got it resolved after talking to Sriijith today.
+
+*Day 45: September 23, 2018*
+
+*Today's Progress*: Learnt how to build the code to 3 type of apps - universal, SPA and static pages. Implemented the generate option in nuxt.config to ensure that all possible pages in the blog are pre-rendered in case of a static pages app. With that and fixing the references to localstorage in generate route (where the app doesn't have access to client's localstorage), the tutorial comes to an end. Next, will work on some app using Nuxt.
+
 
 
